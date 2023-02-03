@@ -35,15 +35,10 @@ function MyCard() {
     </div>
       
     </>
-    
-
-
+  
   );
 }
 
-document.querySelector('.dupe').addEventListener("click", function(e){
-  const myCopy = document.querySelector('.overallcard').cloneNode(true);
-  document.body.appendChild(myCopy);
-});
+
 
 export default MyCard;
