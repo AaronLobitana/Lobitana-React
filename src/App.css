@@ -1,32 +1,158 @@
-.App {
+.overallcard{
+  width: 400px;
+  border: 4px solid black;
+  display: inline-flex;
+}
+
+.box{
+  background-color: #B19CD9;
+}
+
+.pic{
+  width: 400px;
+  transition: transform .5s ease-in-out;
+}
+
+.pic:hover{
+  transform: rotate(360deg);
+}
+
+.heading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details{
+  text-align: center;
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.topbuttons{
+  margin: 10px 0px 10px 0px;
+  display: block;
+}
+
+.dupe{
+  background-color: #B19CD9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.8s;
+  border: 4px double white;
+  font-size: 20px;
+}
+
+.changebg{
+  background-color: #B19CD9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.8s;
+  border: 4px double white;
+  font-size: 20px;
+}
+
+.changehg{
+  background-color: #B19CD9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.8s;
+  border: 4px double white;
+  font-size: 20px;
+}
+
+.del{
+  background-color: #B19CD9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.8s;
+  border: 4px double white;
+  font-size: 20px;
+}
+
+.detailsbutton{
+  background-color: #B19CD9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.8s;
+  border: 4px double white;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.detailsbutton:hover{
+  background-color: black;
+}
+
+.detailsbutton:focus{
+  background: gray;
+  color: #041E42;
+}
+
+.reveal{
+  text-align: center;
+}
+
+
+.dupe:hover{
+  background-color: black;
+}
+
+.dupe:focus{
+  background: gray;
+  color: #041E42;
+}
+
+.changebg:hover{
+  background-color: black;
+}
+
+.changebg:focus{
+  background: gray;
+  color: #041E42;
+}
+
+.changehg:hover{
+  background-color: black;
+}
+
+.changehg:focus{
+  background: gray;
+  color: #041E42;
+}
+
+.del:hover{
+  background-color: black;
+}
+
+.del:focus{
+  background: gray;
+  color: #041E42;
+}
+
+
+
+@media only screen and (max-width: 425px)
+{
+  .reveal{
+    display: none;
+  }
+
+  .overallcard{
+    width: 250px;
+    border: 4px solid black;
+    display: inline-flex;
+  }
+  
+  .pic{
+    width: 250px;
+    transition: transform .5s ease-in-out;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

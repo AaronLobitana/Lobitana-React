@@ -1,25 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function MyCard() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> test.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    
+    <div className='topbuttons'>
+      <button className='dupe'>Duplicate</button>
+      <button className='changebg'>Change Background</button>
+      <button className='changehg'>Change Heading</button>
+      <button className='del' id='del'>Delete</button>
     </div>
+
+    <div className='overallcard'>
+
+      <div className='box'>
+
+      <img className='pic' src='https://pbs.twimg.com/media/FajpQj_XwAEwCWw.jpg'></img>
+
+      <div className='heading'>
+        <h1>the brim reaper</h1>
+      </div>
+
+      <div className='details'>
+        <h3>fear the reaper</h3>
+      </div>
+
+      <div className='reveal'>
+        <button className='detailsbutton'>Details</button>
+      </div>
+
+      </div>
+
+    </div>
+      
+    </>
+    
+
+
   );
 }
 
-export default App;
+export default MyCard;
